@@ -49,6 +49,8 @@ After deployment:
 ### 2.1 Environment Configuration (`.env`)
 
 Create or edit the `.env` file in the addon directory with the following structure:
+> 💡 For reference, see the `idrecognizer_env_sample.env` file located in the GitHub repository.
+
 
 ```env
 AZURE_COGNITIVE_ENDPOINT=... # Azure OCR endpoint
