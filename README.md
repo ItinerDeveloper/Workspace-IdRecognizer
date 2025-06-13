@@ -6,6 +6,8 @@
 ## Description
 The service allows an image of a national identity card attached to a workflow to be sent to an MS Azure endpoint via a webhook. The Azure service analyzes the image, extracts relevant data, and writes it back into the corresponding Workspace workflow variables.
 
+> 💡 **Synchronous Operation**: This integration service operates synchronously. It receives the export event from the workflow and returns the result, including updates to all `id` prefixed variable, within the same session. This ensures immediate availability of the data extracted from the document.
+
 ## Dedicated Template Variables
 - **idCountryRegion**: The country or region of the ID document.
 - **idRegion**: The region specified on the ID document.
